@@ -4,33 +4,12 @@
 
 
 @section('content')
-<div class="series-list container">
-    <span>CURRENT SERIES</span>
-    <div id="Series">
-        @foreach ($seriesList as $seriesItem)
-            <div class="series-card">
-                <img src="{{$seriesItem['thumb']}}" alt="{{$seriesItem['title']}}" alt="{{$seriesItem['title']}}">
-                <h3>{{$seriesItem['title']}}</h3>
-            </div>
+    <div class="container text-white text-center p-3">
+        <h1 >Sei sulla home page</h1>
+        <h2>Le pagine disponibili sono:</h2>
+        <span>Characters/Comics</span>
+        <p>P.S. Puoi anche cliccare sul logo nella navbar</p>
 
-        @endforeach
     </div>
-    <div id="btn">
-        <button>LOAD MORE</button>
-    </div>
-</div>
-<div class="market-list">
-    <div class="container">
-        <div class="box">
-            <ul>
-                @foreach ($marketList as $marketItem)
-                    <li>
-                        <a href="{{$marketItem['href']}}"><img src="{{Vite::asset('resources/img'.$marketItem['img'].'')}}" alt="{{$marketItem['name']}}">
-                        <span>{{ $marketItem['name']}}</span></a>
-                    </li>
-                @endforeach
-            </ul>
-        </div>
-    </div>
-</div>
-@endsection
+
+    @endsection

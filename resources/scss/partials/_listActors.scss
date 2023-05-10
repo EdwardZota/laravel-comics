@@ -1,0 +1,10 @@
+.artists-list{
+    color: white;
+    li{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border: 8px solid black;
+        padding: 16px;
+    }
+}
