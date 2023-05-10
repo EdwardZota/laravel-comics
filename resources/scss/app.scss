@@ -36,9 +36,81 @@ header {
         }
     }
 }
+#jumbotron {
+    background-image: url('');
+    height: 500px;
+    background-size: cover;
+    margin-bottom: 50px;
+}
 
+span {
+    display: inline-block;
+    padding: 10px 20px;
+    position: absolute;
+    top: -68px;
+    left: 0;
+    background-color: #0282f9;
+    font-weight: bolder;
+
+}
+
+#Series {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 800px;
+}
+
+#btn {
+    display: flex;
+}
+
+button {
+    background-color: #0282f9;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 30px auto;
+    font-weight: bolder;
+    border: none;
+
+}
+.series-card {
+    width: 200px;
+    height: 400px;
+    padding-bottom: 50px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 300px;
+        transition: all 1s;
+    }
+
+    h3 {
+        padding-top: 10px;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &:hover img {
+        transform: scale(1.3);
+        box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+        opacity: 0.5;
+    }
+
+    &:hover h3 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+}
 footer {
-    background-image: url('/footer-bg.jpg');
+    background-image: url('');
     background-size: cover;
     width: 100%;
     height: 500px;
@@ -99,6 +171,57 @@ footer {
         }
     }
 }
+.market-list{
+    .container-market {
+        background-color: #0282f9;
+        height: 200px;
+        width: 100%;
+
+        .item a,
+        .item img {
+            transition: all 1s;
+        }
+
+        .item:hover a {
+            color: black;
+        }
+
+        .item:hover img {
+            filter: invert(100%);
+            transform: scale(1.3)
+        }
+    }
+
+    .box {
+        width: 1300px;
+        height: 100%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            li{
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                img {
+                    vertical-align: middle;
+                    height: 60px;
+                    padding-right: 15px;
+                }
+                span{
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+}
+
 
 .lower-footer{
     .container {
@@ -156,3 +279,5 @@ footer {
         }
     }
 }
+
+

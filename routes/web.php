@@ -18,8 +18,10 @@ Route::get('/', function () {
     $data = [
         'navList' => config('navlist'),
         'footerList' => config('footerlist'),
-        'socialList' => config('sociallist')
+        'socialList' => config('sociallist'),
+        'marketList' => config('marketlist'),
+        'seriesList' => config('comics')
     ];
 
-    return view('comics',$data);
+    return view('home',$data);
 });
