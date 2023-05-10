@@ -42,23 +42,27 @@ header {
     background-size: cover;
     margin-bottom: 50px;
 }
+.series-list{
+    position: relative;
+    span {
+        display: inline-block;
+        padding: 10px 20px;
+        position: absolute;
+        top: -68px;
+        left: 0;
+        background-color: #0282f9;
+        color: white;
+        font-weight: bolder;
 
-span {
-    display: inline-block;
-    padding: 10px 20px;
-    position: absolute;
-    top: -68px;
-    left: 0;
-    background-color: #0282f9;
-    font-weight: bolder;
+    }
 
-}
+    #Series {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 1000px;
+    }
 
-#Series {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 800px;
 }
 
 #btn {
@@ -172,8 +176,8 @@ footer {
     }
 }
 .market-list{
-    .container-market {
-        background-color: #0282f9;
+    background-color: #0282f9;
+    .container {
         height: 200px;
         width: 100%;
 
@@ -207,7 +211,6 @@ footer {
 
             a {
                 text-decoration: none;
-                color: white;
                 img {
                     vertical-align: middle;
                     height: 60px;
@@ -215,6 +218,7 @@ footer {
                 }
                 span{
                     text-transform: uppercase;
+                    color: white;
                 }
             }
         }

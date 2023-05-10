@@ -20,7 +20,7 @@
     </div>
 </div>
 <div class="market-list">
-    <div class="container-market">
+    <div class="container">
         <div class="box">
             <ul>
                 @foreach ($marketList as $marketItem)
