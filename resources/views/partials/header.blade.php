@@ -8,6 +8,9 @@
                 @foreach ($navList as $navItem)
                     <li>
                         <a class="{{$navItem['text']=='comics'?'text-primary':''}}" href="{{$navItem['href']}}">{{$navItem['text']}}</a>
+                        @if ($navItem['text']=='comics')
+                            <div class="underline"></div>
+                        @endif
                     </li>
                 @endforeach
             </ul>
