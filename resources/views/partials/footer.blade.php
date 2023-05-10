@@ -20,7 +20,9 @@
 
 <div class="container lower-footer">
     <div class="box">
-        <button>SING-UP NOW</button>
+        <div>
+            <button>SING-UP NOW</button>
+        </div>
         <nav>
             <ul>
                 <h3>FOLLOW US</h3>
